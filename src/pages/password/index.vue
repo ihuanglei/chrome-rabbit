@@ -2,14 +2,14 @@
   <div>
     <div class="title">密码生成器</div>
     <el-row>
-      <el-col :span="7">
+      <el-col :span="8">
         <div class="field">
           <label class="w1">条件</label>
           <div>
             <el-checkbox v-model="hasNumber">0-9</el-checkbox>
             <el-checkbox v-model="hasLowerCase">a-z</el-checkbox>
             <el-checkbox v-model="hasUpperCase">A-Z</el-checkbox>
-            <el-checkbox v-model="hasSymbol">~!@#$%^()_+{}?;.,</el-checkbox>
+            <el-checkbox v-model="hasSymbol">特殊字符</el-checkbox>
           </div>
         </div>
         <div class="field">
@@ -30,7 +30,7 @@
         </div>
         <el-button class="btn" @click="onSubmitClick">生成随机密码</el-button>
       </el-col>
-      <el-col :span="17">
+      <el-col :span="16">
         <el-input type="textarea" :rows="20" v-model="password" readonly></el-input>
       </el-col>
     </el-row>
@@ -78,7 +78,7 @@ export default {
         am.push(randomSymbol)
       }
       if (am.length === 0) {
-        this.$message.error('select method')
+        this.$message.error('选择密码条件')
         return
       }
 

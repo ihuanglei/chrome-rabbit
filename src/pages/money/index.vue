@@ -47,7 +47,7 @@ export default {
 .el-row .field > div {
   display: inline-block;
   margin-left: 20px;
-  width: 600px;
+  width: 400px;
 }
 
 .el-row label {

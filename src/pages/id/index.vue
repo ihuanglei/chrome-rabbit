@@ -2,7 +2,7 @@
   <div>
     <div class="title">身份证号生成器</div>
     <el-row>
-      <el-col :span="6">
+      <el-col :span="8">
         <div class="field">
           <label>出生地址</label>
           <div>
@@ -33,7 +33,7 @@
         </div>
         <el-button class="btn" @click="onSubmitClick">生成身份证号</el-button>
       </el-col>
-      <el-col :span="18">
+      <el-col :span="16">
         <el-input type="textarea" :rows="20" v-model="ids" readonly></el-input>
       </el-col>
     </el-row>
