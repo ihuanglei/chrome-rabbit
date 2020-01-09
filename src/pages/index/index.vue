@@ -1,3 +1,6 @@
 <template>
-  <div>hello world!!</div>
+  <div>
+    rabbit tools
+    <a href="https://github.com/ihuanglei/chrome-rabbit">github</a>
+  </div>
 </template>
